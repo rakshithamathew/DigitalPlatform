@@ -9,7 +9,6 @@ const HomeOne = () => {
   return (
     <>
       <section className="hidden sm:flex relative w-full h-relative md:min-h-[55vh] lg:min-h-[85vh] items-center justify-start overflow-hidden capitalize">
-        {/* <div className="absolute inset-0 w-[90%] h-[90%] ml-16 rounded-3xl bg-slate-100 object-cover z-0 "></div> */}
         <div>
           <img
             src={home}

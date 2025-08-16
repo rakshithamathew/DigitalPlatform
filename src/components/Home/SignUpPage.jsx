@@ -41,14 +41,12 @@ const navigate = useNavigate();
             </button>
           </div>
 
-          {/* Vertical Divider */}
           <div className="flex flex-col items-center h-72 ">
             <div className="w-px bg-gray-300 flex-1"></div>
             <span className="py-2 text-gray-500 text-sm">or</span>
             <div className="w-px bg-gray-300 flex-1"></div>
           </div>
 
-          {/* Right Side - Email and Password Form */}
           <div className="flex-1 space-y-6">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -99,8 +97,6 @@ const navigate = useNavigate();
             </button>
           </div>
         </div>
-
-        {/* Bottom Section */}
         <div className="flex items-center justify-between mt-8">
           <div>
             <span className="text-gray-600 text-sm">Don't have an account? </span>
@@ -109,9 +105,6 @@ const navigate = useNavigate();
             </a>
           </div>
           
-          {/* <button className="w-10 h-10 bg-white border-2 border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors">
-            <Eye className="w-5 h-5 text-gray-600" />
-          </button> */}
         </div>
       </div>
     </div>
