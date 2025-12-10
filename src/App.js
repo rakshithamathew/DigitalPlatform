@@ -1,40 +1,37 @@
+/* eslint-disable no-undef */
+import './App.css';
+import ReactBasics from './Components/ReactBasics';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import HomeMain from './components/Home/HomeMain';
-import Seller from './components/Home/Seller';
-import Buyer from './components/Home/Buyer';
-import SignUpPage from './components/Home/SignUpPage';
-import SellerBuyer from './components/Home/SellerBuyer';
+import "leaflet/dist/leaflet.css";
+import ToDo from "./Components/ToDo"
+import React from "react";
+import { ParentChildDropdown } from './Components/ParentChildDropdown';
+import Debounce from './Components/Debounce';
+import TablePagination from './Components/TablePagination';
 
+function App() {
+  
 
-const App = () => {
-   const router = createBrowserRouter([
-      {
-        path: "/",
-        element:<HomeMain/>,  
-      },
-      {
-        path:"/Buyer",
-        element: <Buyer />
-      },
-      {
-        path:"/Seller",
-        element: <Seller />
-      },
-      {
-        path:"/SignUpPage",
-        element: <SignUpPage />
-      },
-      {
-        path:"/SellerBuyer",
-        element: <SellerBuyer />
-      }
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      // element: <ReactBasics />, 
+      // element: <ToDo />, 
+      // element: <ParentChildDropdown /> 
+      // element: <Debounce />
+      element: <TablePagination />
 
-   ])
+    },
+   
+    {
+      path: '*',
+      element: <h1>404 - Page Not Found</h1>,
+    },
+  ]);
+
   return (
-    <div>
      <RouterProvider router={router} />
-    </div>
-  )
+  );
 }
 
-export default App
+export default App;
